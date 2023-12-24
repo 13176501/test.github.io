@@ -321,6 +321,12 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
+/* 添加渐变色类 */
+.gradient-text {
+    background: linear-gradient(to right, #ff6b6b, #3b5998); /* 使用你想要的颜色 */
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /* Row */
 
