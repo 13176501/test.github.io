@@ -34,3 +34,10 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/* 红色渐变 */
+.gradient-red {
+    background: linear-gradient(to right, #ffbe00, #f4511e);
+    -webkit-background-clip: text;
+    color: transparent;
+}
