@@ -1,5 +1,12 @@
 /* custom.css */
 
+/* 普通渐变类 */
+.gradient-text {
+    background: linear-gradient(to right, #ff6b6b, #3b5998); /* 使用你想要的颜色 */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 /* 蓝色渐变 */
 .gradient-blue {
     background: linear-gradient(to right, #3498db, #2c3e50);
