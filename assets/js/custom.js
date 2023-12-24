@@ -1,18 +1,29 @@
-// custom.js
+// 在 applyDynamicGradient 函数中添加对 .element 类的处理
+function applyDynamicGradient() {
+    var elements = $('.dynamic-gradient');
 
-(function($) {
+    elements.each(function(index) {
+        var element = $(this);
+        var intensity = index / elements.length;
 
-    var $window = $(window),
-        $wrapper = $('#wrapper');
+        var color = calculateDynamicColor(intensity);
 
-    // Play initial animations on page load.
-    $window.on('load', function() {
-        window.setTimeout(function() {
-            $wrapper.removeClass('is-preload');
-        }, 100);
+        element.css({
+            'background': 'linear-gradient(to right, ' + color.light + ', ' + color.dark + ')',
+            '-webkit-background-clip': 'text',
+            'color': 'transparent'
+        });
     });
 
-    // Background with dynamic parallax effect.
-    $wrapper._parallax(0.925, true);
+    // 针对 .element 类的处理
+    var element = $('.element');
+    var color = calculateDynamicColor(0.5); // 例：设置固定强度的颜色
+    element.css({
+        'background': 'linear-gradient(to right, ' + color.light + ', ' + color.dark + ')',
+        '-webkit-background-clip': 'text',
+        'color': 'transparent'
+    });
+}
 
-})(jQuery);
+// 调用动态渐变效果
+applyDynamicGradient();
