@@ -1,8 +1,29 @@
 /* custom.css */
 
-/* 添加渐变色类 */
-.gradient-text {
-    background: linear-gradient(to right, #ff6b6b, #3b5998); /* 使用你想要的颜色 */
+/* 蓝色渐变 */
+.gradient-blue {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 绿色渐变 */
+.gradient-green {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 橙色渐变 */
+.gradient-orange {
+    background: linear-gradient(to right, #e67e22, #d35400);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 金色渐变 */
+.gradient-gold {
+    background: linear-gradient(to right, #ffd700, #ffa500);
     -webkit-background-clip: text;
     color: transparent;
 }
